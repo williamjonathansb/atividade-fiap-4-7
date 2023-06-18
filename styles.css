@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+
+  flex-direction: column;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.saldo {
+  width: 60vw;
+  max-width: 400px;
+  height: 8rem;
+
+  background: rgb(208, 246, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(208, 246, 223, 1) 56%,
+    rgba(206, 247, 255, 1) 100%
+  );
+
+  border: 0;
+  border-radius: 1rem;
+}
+
+.saldo > .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saldo > div {
+  border: 0;
+  font-size: 0.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.adicionar {
+  background-color: #d0f6df;
+
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.adicionar:active {
+  background-color: #d0f6df !important;
+}
+
+.titulo-extrato {
+  min-width: 300px;
+}
+
+.extrato {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  max-width: 400px;
+
+  overflow-y: scroll;
+}
+
+@media (min-width: 800px) {
+  .extrato {
+    width: 60vw;
+  }
+}
+
+.extrato > li {
+  border: 1px solid rgb(245, 245, 245);
+  border-color: rgb(195, 195, 195) !important;
+  border-top-width: 1px !important;
+  border-radius: 0.5rem !important;
+  padding: 1rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  color: #202949;
+}
+
+.gasto {
+  color: #b94a4a;
+}
+
+.glowShadow::after {
+  content: "";
+  position: absolute;
+  inset: -0.4em;
+  background: linear-gradient(
+    to bottom right,
+    rgb(180, 255, 187),
+    rgb(208, 245, 253)
+  );
+  filter: blur(2.5em);
+  z-index: -1;
+}
+
+.adicionarTransacao {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
