@@ -13,15 +13,12 @@ body {
   max-width: 400px;
   height: 8rem;
 
-  background: rgb(208, 246, 223);
-  background: linear-gradient(
-    90deg,
-    rgba(208, 246, 223, 1) 56%,
-    rgba(206, 247, 255, 1) 100%
-  );
-
   border: 0;
   border-radius: 1rem;
+
+  background-color: #23c779 !important;
+
+  color: white !important;
 }
 
 .saldo > .card-body {
@@ -90,19 +87,6 @@ h5 {
   color: #b94a4a;
 }
 
-.glowShadow::after {
-  content: "";
-  position: absolute;
-  inset: -0.4em;
-  background: linear-gradient(
-    to bottom right,
-    rgb(180, 255, 187),
-    rgb(208, 245, 253)
-  );
-  filter: blur(2.5em);
-  z-index: -1;
-}
-
 .adicionarTransacao {
   display: flex;
   flex-direction: column;
@@ -116,4 +100,242 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.btn-light-success {
+  background-color: #23c779;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-light-success:hover {
+  background-color: #1dae68;
+  color: white;
+}
+
+.btn-light-success:active {
+  background-color: #1dae68 !important;
+  color: white !important;
+}
+
+.btn-bigger-success {
+  background-color: #23c779;
+  color: white;
+  font-weight: bold;
+  border-radius: 40px;
+  font-size: 28px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.btn-bigger-success:hover {
+  background-color: #1dae68;
+  color: white;
+}
+
+.btn-bigger-success:active {
+  background-color: #1dae68 !important;
+  color: white !important;
+}
+
+.first-page {
+  background-color: #1f1f1f;
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  width: 50%;
+  align-items: start;
+  height: calc(100vh - 4rem);
+}
+
+.container-title > .title {
+  font-size: 42px;
+  font-weight: lighter;
+  line-height: normal;
+  max-width: 502px;
+}
+
+.container-title > .subtitle {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 30px;
+  max-width: 502px;
+  padding-right: 50px;
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration > img {
+  width: 50vw;
+}
+
+@media (min-width: 1380px) {
+  .first-page {
+    padding-left: 10rem;
+    padding-right: 20rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .illustration > img {
+    max-width: 500px;
+  }
+}
+
+.platforms {
+  display: flex;
+  gap: 1rem;
+}
+
+.second-page {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 2rem;
+}
+
+.container-second {
+  display: flex;
+  flex-direction: column;
+
+  height: fit-content;
+  width: 50%;
+  padding-top: 2rem;
+  gap: 4rem;
+  align-items: start;
+}
+
+.container-second > .title {
+  font-size: 42px;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.container-readmore {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+}
+
+.container-second > .container-readmore > .subtitle {
+  font-size: 20px;
+  font-weight: 3000;
+  line-height: 38px;
+  max-width: 600px;
+}
+
+.container-device {
+  display: flex;
+  align-items: center;
+}
+
+.btn-bigger-lighter-success {
+  background-color: #23c779;
+  color: white;
+  font-weight: bold;
+  border-radius: 23px;
+  font-size: 20px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.btn-bigger-lighter-success:hover {
+  background-color: #1dae68;
+  color: white;
+}
+
+.btn-bigger-lighter-success:active {
+  background-color: #1dae68 !important;
+  color: white !important;
+}
+
+@media (max-width: 800px) {
+  .first-page {
+    gap: normal;
+  }
+
+  .illustration > img {
+    display: none;
+  }
+
+  .container-title {
+    width: 80%;
+    align-items: center;
+  }
+
+  .container-title > .title {
+    font-size: 1.5rem;
+  }
+
+  .container-title > .subtitle {
+    line-height: 30px;
+    padding: 0;
+  }
+
+  .btn-bigger-success {
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .second-page {
+    padding-bottom: 2rem;
+    gap: normal;
+  }
+
+  .container-second {
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .container-second > .title {
+    font-size: 1.5rem;
+  }
+
+  .container-readmore {
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .container-second > .container-readmore > .subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 30px;
+    max-width: 600px;
+    padding: 0;
+  }
+
+  .btn-bigger-lighter-success {
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .container-device {
+    display: none;
+  }
 }
